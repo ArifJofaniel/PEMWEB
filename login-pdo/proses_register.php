@@ -3,7 +3,7 @@ include 'koneksi.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Opsional enkripsi sesuai soal (sangat disarankan)
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $biografi = $_POST['biografi'];
 
 $sql = "INSERT INTO users (name, email, password, biografi) VALUES (:name, :email, :password, :biografi)";
