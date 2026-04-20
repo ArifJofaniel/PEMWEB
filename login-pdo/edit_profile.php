@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// KETENTUAN: Hanya bisa diakses kalau sudah login
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit;
